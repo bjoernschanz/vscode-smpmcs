@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "smpmcs",
+	"scopeName": "source.smpmcs",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+		{ "include": "#comments" }
+  ],
+  "repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.smpmcs",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+    "keywords": {
+      "patterns": [
+        {
+          "match": "\\b(HFS|SYSLIB|DISTLIB)\\b",
+          "name": "keyword.control.lsp-sample"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "match": "'[^']*'",
+          "name": "string.quoted.single.lsp-sample"
+        },
+        {
+          "match": "\"[^\"]*\"",
+          "name": "string.quoted.double.lsp-sample"
+        }
+      ]
+    }
+  }
+}

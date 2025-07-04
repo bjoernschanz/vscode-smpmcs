@@ -1,0 +1,9 @@
+.vscode-test/**
+backup/
+images/logo.png
+Marketplace Token.txt
+vsc-extension-quickstart.md
+vscode-smpmcs-*.vsix
+node_modules
+out
+.DS_Store

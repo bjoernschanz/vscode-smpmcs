@@ -1,0 +1,10 @@
+{
+    "HFS Element": {
+        "prefix": ["++HFS", "++ HFS"],
+        "body": [
+            "++HFS(${1:expr}) SYSLIB(${2:expr}) DISTLIB(${3:expr})",
+                "\t${0}",
+            "."
+        ]
+    }
+}
