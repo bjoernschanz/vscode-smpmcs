@@ -57,5 +57,18 @@
                 "\t${0}",
             "."
         ]
+    },
+
+    "Ver": {
+        "prefix": ["++VER", "++ VER"],
+        "body": [
+            "++VER(${4:srel}) FMID(${5:fmid})",
+                "\t/* DELETE(${6:sysmodid}) */",
+                "\t/* PRE(${6:sysmodid}) */",
+                "\t/* SUP(${7:sysmodid}) */",
+                "\t/* REQ(${8:sysmodid}) */",
+            ".",
+            "${0}"
+        ]
     }
 }
