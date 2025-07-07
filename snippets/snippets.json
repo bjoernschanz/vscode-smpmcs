@@ -18,7 +18,21 @@
             "${0}"
         ]
     },
-
+    "Function": {
+        "prefix": ["++FUNCTION", "++ FUNCTION"],
+        "body": [
+            "++FUNCTION(${1:sysmodid}) REWORK(${2:yyyyddd})",
+                "\tDESC(${3:expr})",
+            ".",
+            "++VER(${4:srel}) FMID(${5:fmid})",
+                "\t/* DELETE(${6:sysmodid}) */",
+                "\t/* PRE(${6:sysmodid}) */",
+                "\t/* SUP(${7:sysmodid}) */",
+                "\t/* REQ(${8:sysmodid}) */",
+            ".",
+            "${0}"
+        ]
+    },
 
     "Usermod": {
         "prefix": ["++USERMOD", "++ USERMOD"],
@@ -26,7 +40,7 @@
             "++USERMOD(${1:sysmodid}) REWORK(${2:yyyyddd})",
                 "\tDESC(${3:expr})",
             ".",
-            "++VER(${4:ver}) FMID(${5:fmid})",
+            "++VER(${4:srel}) FMID(${5:fmid})",
                 "\t/* PRE(${6:sysmodid}) */",
                 "\t/* SUP(${7:sysmodid}) */",
                 "\t/* REQ(${8:sysmodid}) */",
