@@ -89,6 +89,14 @@
             "${0}"
         ]
     },
+    "Source": {
+        "prefix": ["++SRC", "++ SRC"],
+        "body": [
+            "++SRC(${1:name}) SYSLIB(${2:dddef}) DISTLIB(${3:dddef})",
+                "\t${0}",
+            "."
+        ]
+    },
     "Ver": {
         "prefix": ["++VER", "++ VER"],
         "body": [
