@@ -1,9 +1,19 @@
 {
     "Assign": {
-        "prefix": ["++Assign", "++ Assign"],
+        "prefix": ["++ASSIGN", "++ ASSIGN"],
         "body": [
             "++ASSING   SOURCEID(${1:sourceid})",
             "           TO(${2:sysmodid})",
+            ".",
+            "${0}"
+        ]
+    },
+
+    "Delete": {
+        "prefix": ["++DELETE", "++ DELETE"],
+        "body": [
+            "++DELETE(${1:name}) SYSLIB(${2:ALL})",
+            "          /* ALIAS(${3:name}) */",
             ".",
             "${0}"
         ]
