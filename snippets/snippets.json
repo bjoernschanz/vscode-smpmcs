@@ -34,6 +34,23 @@
         ]
     },
 
+    "JclIn": {
+        "prefix": ["++JCLIN", "++ JCLIN"],
+        "body": [
+            "++JCLIN .",
+            "${0}//JOB      JOB 'accounting info',MSGLEVEL=(1,1)",
+            "//STEP1    EXEC PGM=IEWL",
+            "//SYSLMOD  DD DSN=SYS1.LINKLIB,DISP=SHR",
+            "//AOS12    DD DSN=SYS1.AOS12,DISP=SHR",
+            "//SYSLIN   DD *",
+            "INCLUDE AOS12(IFBMOD01)",
+            "ENTRY   IFBMOD01",
+            "ALIAS   IFBMOD01A",
+            "NAME    IFBMOD01(R)",
+            "/*"
+        ]
+    },
+
     "Usermod": {
         "prefix": ["++USERMOD", "++ USERMOD"],
         "body": [
