@@ -1,4 +1,15 @@
 {
+    "Assign": {
+        "prefix": ["++Assign", "++ Assign"],
+        "body": [
+            "++ASSING   SOURCEID(${1:sourceid})",
+            "           TO(${2:sysmodid})",
+            ".",
+            "${0}"
+        ]
+    },
+
+
     "Usermod": {
         "prefix": ["++USERMOD", "++ USERMOD"],
         "body": [
