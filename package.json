@@ -1,7 +1,7 @@
 {
     "name": "vscode-smpmcs",
     "displayName": "SMP/E Modification Control Statements (MCS)",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "BjoernSchanz",
     "description": "SMP/E MCS language support and debugging for Visual Studio Code",
     "author": {
